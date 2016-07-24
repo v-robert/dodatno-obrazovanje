@@ -1,0 +1,48 @@
+﻿@model MVCEvidencijadodatnogobrazovanja.Models.Ustanova
+
+@{
+    ViewBag.Title = "Obriši";
+}
+
+<h2>Obriši</h2>
+
+<h3>Želite li obrisati ovaj certifikat?</h3>
+<div>
+    <h4>Ustanova</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.OIB)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OIB)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PodrucjeRada)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PodrucjeRada)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Vrsta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Vrsta)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Obriši" class="btn btn-primary" /> |
+            @Html.ActionLink("Natrag na listu", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,74 @@
+﻿@model MVCEvidencijadodatnogobrazovanja.Models.Student
+
+@{
+    ViewBag.Title = "Detalji o studentu";
+}
+
+<h2>Detalji o studentu</h2>
+
+<div>
+    <h4>Student</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Ustanova.PodrucjeRada)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ustanova.PodrucjeRada)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImeiPrezime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImeiPrezime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.JMBAG)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.JMBAG)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DatumIzdavanja)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DatumIzdavanja)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GodinaStudija)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GodinaStudija)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Uredi", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Natrag na listu", "Index")
+</p>

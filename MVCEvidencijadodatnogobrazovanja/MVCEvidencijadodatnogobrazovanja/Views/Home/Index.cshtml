@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "Naslovna stranica";
+}
+
+<div class="jumbotron">
+    <h1>StudyOs</h1>
+    <p class="lead">Aplikacija za evidenciju dodatnog obrazovanja studenata koje su stekli praksama, tečajevima, volontiranjem...</p>
+    
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Certificirane ustanove</h2>
+        <p>
+           Pregledaj popis svih ustanova ovlaštenih za izdavanje certifikata
+        </p>
+        <br />
+        <p>@Html.ActionLink("Vidi više", "Index", "Ustanova", null, htmlAttributes: new { @class = "btn btn-primary btn_lg" })</p>
+    </div>
+
+    <div class="col-md-4">
+        <h2>O aplikaciji</h2>
+        <p>Ovo je odlično rješenje za praćenje izvannastavnih aktivnosti i dodatnog obrazovanja studenata Ekonomskog fakulteta u Osijeku.</p>
+        <p>@Html.ActionLink("Kontaktirajte nas", "Contact", "Home", htmlAttributes: new { @class = "btn btn-primary btn_lg" })</p>
+    </div>
+
+    <div class="col-md-4">
+        <h2>Ovu aplikaciju izradili su studenti </h2>
+        <p>
+            <ul>
+            <li>Kristina Hodak      </li>
+            <li>Matea Kršić         </li>
+            <li>Matea Šćulić        </li>
+            <li>Robert Vulić        </li>
+           </ul>
+        </p>
+
+    </div>
+</div>
